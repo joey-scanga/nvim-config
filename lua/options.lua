@@ -8,4 +8,5 @@ local g = vim.g
 g.slime_target = "tmux"
 
 o.rnu = true
+o.autochdir = true
 -- o.cursorlineopt ='both' -- to enable cursorline!

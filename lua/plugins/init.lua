@@ -38,9 +38,14 @@ return {
     -- Lazy loading is not recommended because it is very tricky to make it work correctly in all situations.
     lazy = false,
   },
-  { "jpalardy/vim-slime", lazy = false },
+  { "jpalardy/vim-slime",
+    lazy = false },
   {
     "christoomey/vim-tmux-navigator",
-    lazy = false
+    lazy = false,
+  },
+  {
+    "tpope/vim-fugitive",
+    lazy = false,
   },
 }
