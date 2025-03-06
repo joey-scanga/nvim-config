@@ -5,13 +5,16 @@ require "nvchad.mappings"
 local map = vim.keymap.set
 local del = vim.keymap.del
 
+-- remove default ';' behavior from NvChad
 map("n", ";", ":", { desc = "CMD enter command mode" })
+del("n", ";")
+
+-- tmux navigation
 map("n", "<C-h>",  "<cmd> TmuxNavigateLeft<CR>")
 map("n", "<C-l>", "<cmd> TmuxNavigateRight<CR>" )
 map("n", "<C-j>", "<cmd> TmuxNavigateDown<CR>" )
 map("n", "<C-k>", "<cmd> TmuxNavigateUp<CR>")
 map("i", "jk", "<ESC>")
 
-del("n", ";")
-
+map("n", "<leader>sc", "<cmd> SlimeConfig<CR>")
 -- map({ "n", "i", "v" }, "<C-s>", "<cmd> w <cr>")
