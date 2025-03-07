@@ -9,6 +9,11 @@ local del = vim.keymap.del
 map("n", ";", ":", { desc = "CMD enter command mode" })
 del("n", ";")
 
+-- remove terminal shortcuts
+del({"n", "t"}, "<A-v>")
+del({"n", "t"}, "<A-h>")
+del({"n", "t"}, "<A-i>")
+
 -- tmux navigation
 map("n", "<C-h>",  "<cmd> TmuxNavigateLeft<CR>")
 map("n", "<C-l>", "<cmd> TmuxNavigateRight<CR>" )
@@ -19,4 +24,5 @@ map("i", "jk", "<ESC>")
 map("n", "<leader>sc", "<cmd> SlimeConfig<CR>")
 
 map("n", "-", "<cmd> Oil<CR>")
+
 -- map({ "n", "i", "v" }, "<C-s>", "<cmd> w <cr>")
