@@ -25,6 +25,6 @@ map("n", "<leader>sc", "<cmd> SlimeConfig<CR>")
 
 map("n", "-", "<cmd> Oil<CR>")
 
-map("n", "<leader>tw", "<cmd> lua vim.diagnostic.config({virtual_text=not vim.diagnostic.config()['virtual_text']})")
+map("n", "<leader>tw", "<cmd> lua vim.diagnostic.config({virtual_text=not vim.diagnostic.config()['virtual_text']})<CR>")
 
 -- map({ "n", "i", "v" }, "<C-s>", "<cmd> w <cr>")
