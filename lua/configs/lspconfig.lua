@@ -46,6 +46,8 @@ lspconfig["pylsp"].setup {
     },
   },
 }
+
+require("jupytext").setup({ style = "light" })
 -- configuring single server, example: typescript
 -- lspconfig.ts_ls.setup {
 --   on_attach = nvlsp.on_attach,
