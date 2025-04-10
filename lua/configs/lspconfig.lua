@@ -4,7 +4,7 @@ require("nvchad.configs.lspconfig").defaults()
 local lspconfig = require "lspconfig"
 
 -- EXAMPLE
-local servers = { "html", "cssls", "bashls", "esbonio", "sourcekit", "hls", "fourmolu" }
+local servers = { "html", "cssls", "bashls", "esbonio", "sourcekit", "r_language_server", "hls", "fourmolu"  }
 local nvlsp = require "nvchad.configs.lspconfig"
 
 -- lsps with default config
@@ -46,6 +46,8 @@ lspconfig["pylsp"].setup {
     },
   },
 }
+
+require("jupytext").setup({ style = "light" })
 -- configuring single server, example: typescript
 -- lspconfig.ts_ls.setup {
 --   on_attach = nvlsp.on_attach,
