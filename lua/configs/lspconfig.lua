@@ -37,7 +37,7 @@ lspconfig["pylsp"].setup {
         pylsp_mypy = { enabled = false },
         pycodestyle = {
           enabled = true,
-          ignore = { "E501", "E231" },
+          ignore = { "E501", "E231", "E266", "W503" },
           maxLineLength = 120,
         },
         yapf = { enabled = true },
@@ -47,7 +47,6 @@ lspconfig["pylsp"].setup {
   },
 }
 
-require("jupytext").setup({ style = "light" })
 -- configuring single server, example: typescript
 -- lspconfig.ts_ls.setup {
 --   on_attach = nvlsp.on_attach,
